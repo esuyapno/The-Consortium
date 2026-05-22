@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
 <title>The Consortium — Humanitarian & Development Consultant Group</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +46,7 @@
   }
 
   /* ── NAV ── */
-  nav {
+ nav {
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 100;
@@ -54,9 +55,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 clamp(1.5rem, 5vw, 4rem);
-    background: rgba(13, 27, 46, 1);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
 
@@ -129,7 +127,11 @@
     flex-direction: column;
     gap: 1.5rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    background: #0d1b2e !important; 
+    opacity: 1 !important;
+    min-height: calc(100vh - var(--nav-h)); 
   }
+  
   .mobile-menu.open { display: flex; }
   .mobile-menu a {
     font-size: 1rem;
