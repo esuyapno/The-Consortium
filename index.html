@@ -120,20 +120,17 @@
     display: none;
     position: fixed;
     top: var(--nav-h);
-    left: 0; right: 0;
+    left: 0; 
+    right: 0;
     z-index: 99;
     flex-direction: column;
+    justify-content: flex-start; 
+    padding: 1.5rem 2rem; 
+    gap: 0.5rem; 
     border-bottom: 1px solid rgba(255,255,255,0.1);
     background: #0d1b2e !important; 
     opacity: 1 !important;
     min-height: calc(100vh - var(--nav-h)); 
-    
-    /* Main container padding: 
-       This shrinks the giant empty space at the very top of the menu card */
-    padding: 1.5rem 2rem; 
-    
-    /* Gap between individual item blocks */
-    gap: 0.75rem; 
   }
   
   .mobile-menu.open { display: flex; }
